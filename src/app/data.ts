@@ -1,7 +1,7 @@
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
-const places = [
+const locations = [
     {
         'img1': 'assets/images/r1.jpg',
         'img2': 'assets/images/r2s.jpg',
@@ -172,4 +172,4 @@ const places = [
     }
 ];
 
-export const places$ = Observable.of(places);
+export const locations$ = Observable.of(locations);

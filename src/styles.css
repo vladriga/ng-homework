@@ -140,7 +140,7 @@ span.cloud {
   height: 50px;
   display: inline-block;
 }
-.element-left {
+.location {
   float: left;
   width:50%;
 }
@@ -330,7 +330,7 @@ i.text-info{
 }
 }
 @media(max-width:1366px){
-.element-left {
+.location {
   width: 55%;
 }
 .element {
@@ -399,7 +399,7 @@ i.text-info{
 }
 }
 @media(max-width:480px){
-.element-left {
+.location {
   width: 100%;
   float: none;
 }

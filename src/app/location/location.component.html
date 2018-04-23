@@ -1,20 +1,20 @@
-<div class="element-left">
+<div class="location">
   <div class="element-bg-img">
     <img src="assets/images/1.jpg" alt="" class="img-responsive"> </div>
-  <div class="element-left-bottom">
+  <div class="location-bottom">
     <div class="ele-strip">
       <ul>
         <li>
-          <a href="#" (click)="type = 'hotel'">Hotel</a>
+          <a href="#" (click)="onMenuClick('hotel')">Hotel</a>
         </li>
         <li>
-          <a href="#" (click)="type = 'fishing'">Fishing</a>
+          <a href="#" (click)="onMenuClick('fishing')">Fishing</a>
         </li>
         <li>
-          <a href="#" (click)="type = 'tours'">Tours</a>
+          <a href="#" (click)="onMenuClick('tours')">Tours</a>
         </li>
         <li class="anc-bor">
-          <a href="#" (click)="type = 'weather'">Weather</a>
+          <a href="#" (click)="onMenuClick('weather')">Weather</a>
         </li>
       </ul>
     </div>
@@ -23,20 +23,20 @@
       <span class="line"> </span>
       <div class="activity_box">
         <div class="scrollbar" id="style-2">
-          <div class="activity-row" *ngFor="let place of places$ | async | placesFilter:type">
+          <div class="activity-row" *ngFor="let location of locations$ | async | locationsFilter:type" (click)="onLocationClick(location)">
            <div class="activity-desc">
-              <h5>{{place.address}}</h5>
-              <p>{{place.description1}}</p>
-              <p>{{place.description2}}</p>
-              <h6>{{getPhone(place.phone)}}</h6>
+              <h5>{{location.address}}</h5>
+              <p>{{location.description1}}</p>
+              <p>{{location.description2}}</p>
+              <h6>{{getPhone(location.phone)}}</h6>
             </div>
             <div class="activity-img">
               <ul>
                 <li>
-                  <img src="{{place.img1}}" class="img-small" alt="" />
+                  <img src="{{location.img1}}" class="img-small" alt="" />
                 </li>
                 <li>
-                  <img src="{{place.img2}}" class="img-small" alt="" />
+                  <img src="{{location.img2}}" class="img-small" alt="" />
                 </li>
               </ul>
             </div>

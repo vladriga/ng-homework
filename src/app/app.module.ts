@@ -3,19 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ElementLeftComponent } from './element-left/element-left.component';
+import { LocationComponent } from './location/location.component';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { TeddyBearComponent } from './teddy-bear/teddy-bear.component';
-import { PlacesFilterPipe } from './places-filter.pipe';
+import { LocationsFilterPipe } from './locations-filter.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ElementLeftComponent,
+    LocationComponent,
     TemperatureComponent,
     TeddyBearComponent,
-    PlacesFilterPipe
+    LocationsFilterPipe
   ],
   imports: [
     BrowserModule
